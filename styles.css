@@ -1,0 +1,162 @@
+*, before, after {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+/* Grundlage*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #3b1b00;
+}
+
+
+/*Titelbild*/
+.Titelbildschirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #3b1b00;
+}
+
+.Animation {
+    width: 700px;
+    height: 80%;
+    margin-bottom: -150px;
+}
+
+.Titelkatze {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border: none;
+    background: #ffe4ab;
+    color: #3b1b00;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background: #f6be8a;
+}
+
+
+/*Handbuch*/
+.Handbuch {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    justify-content: center;
+    align-items: center;
+}
+
+.Handbuch-Inhalt {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.Handbuch-Inhalt button {
+    margin: 10px;
+}
+
+
+/*Vollbild*/
+.szene-vollbild {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.vollbild {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*Textbox*/
+.story-container {
+    position: absolute;
+    bottom: 30px;
+    width: 900px;
+    height: 200px;
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.text{
+    color: #3b1b00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text p {
+    margin: 0;
+    font-size: 1.1em;
+    justify-content: center;
+}
+
+.btn-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+.btn-grid button {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 1em;
+    border: none;
+    background: #3b1b00;
+    color: #ffe4ab;
+    border-radius: 5px;
+    width: 80px;
+    height: 50px;
+    transition: background 0.3s ease;
+}
+
+.btn-grid button:hover {
+    background: #e39c5a;
+}
+
+
+
