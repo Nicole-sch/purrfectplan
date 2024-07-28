@@ -26,19 +26,19 @@ function AktionWeiter1(){
 
 function AktionWeiter2(){
     document.getElementById('Handbuch').style.display = 'none'; 
-    document.getElementById('szene-Gasslein-1').style.display = 'flex';
+    document.getElementById('szene-Gasse-1').style.display = 'flex';
 }
 
 function AktionHelfen() {
     localStorage.setItem('action', 'eins');
     document.getElementById('Handbuch').style.display = 'none'; 
-    document.getElementById('szene-Gasslein-2').style.display = 'flex'; 
+    document.getElementById('szene-Gasse-2').style.display = 'flex'; 
 }
 
 function AktionNichtHelfen(){
     localStorage.setItem('action', 'zwei');
     document.querySelector('.Handbuch').style.display = 'none'; 
-    document.getElementById('szene-Gasslein-3').style.display = 'flex'; 
+    document.getElementById('szene-Gasse-3').style.display = 'flex'; 
 }
 
 function AktionWeiter3(){
